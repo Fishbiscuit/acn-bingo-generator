@@ -58,9 +58,9 @@ h4 {
 }
 
 .main-content {
-  max-width: 600px;
+  max-width: 800px;
   width: 100%;
-  margin: 4em auto 0;
+  margin: 2em auto 0;
   overflow: hidden;
 }
 
@@ -103,7 +103,7 @@ h4 {
   justify-content: center;
   position: relative;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.35;
   user-select: none;
 }
