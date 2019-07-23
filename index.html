@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Demo Day Bingo</title>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+				<link rel="stylesheet" type="text/css" href="main.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142866432-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-142866432-1');
+		</script>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>		
+	</head>
+
+	<body>
+
+ 
+ 		<div class="title">
+ 	 		<br>
+ 	 		<h3><center>DEMO DAY BINGO GENERATOR</center></h3>
+ 		</div>
+ 		<div class="text">
+	 		<p>Let's see how many words you can catch!</p>
+			<p>Sometimes the board gets a bit out of position.</p>
+			<p>If that happens, just keep INNOVATING NOW</p>
+ 		</div>
+		<div class="button">
+			<button onclick="boardLoad()">INNOVATE NOW</button>
+		</div> 
+
+		<div class="main-content">
+		<div class="title__card"><span>Demo Day Bingo</span></div>
+		<div class="bingo-card">
+		<div class="bingo-card__item" id="1"></div>
+		<div class="bingo-card__item" id="2"></div>
+		<div class="bingo-card__item" id="3"></div>
+		<div class="bingo-card__item" id="4"></div>
+		<div class="bingo-card__item" id="5"></div>
+		<div class="bingo-card__item" id="6"></div>
+		<div class="bingo-card__item" id="7"></div>
+		<div class="bingo-card__item" id="8"></div>
+		<div class="bingo-card__item" id="9"></div>
+		<div class="bingo-card__item" id="10"></div>
+		<div class="bingo-card__item" id="11"></div>
+		<div class="bingo-card__item" id="12"></div>
+		<div class="bingo-card__item" id="13"></div>
+		<div class="bingo-card__item" id="14"></div>
+		<div class="bingo-card__item" id="15"></div>
+		<div class="bingo-card__item" id="16"></div>
+		<div class="bingo-card__item" id="17"></div>
+		<div class="bingo-card__item" id="18"></div>
+		<div class="bingo-card__item" id="19"></div>
+		<div class="bingo-card__item" id="20"></div>
+		<div class="bingo-card__item" id="21"></div>
+		<div class="bingo-card__item" id="22"></div>
+		<div class="bingo-card__item" id="23"></div>
+		<div class="bingo-card__item" id="24"></div>
+		<div class="bingo-card__item" id="25"></div>
+		</div>
+		<div class="buttonholder">
+		<div class="clear-button">CLEAR BOARD</div>
+		</div>
+	<br>
+	<br>
+	<br>
+
+
+
+
+	<script> function boardLoad() {
+			//declare arrays
+      		const buzz= [
+			'X.0',
+			'AI',
+			'AR',
+			'Big Data',
+			'Blockchain',
+			'Continuous Learning',
+			'Cloud Computing',
+			'Design Thinking',
+			'DevOps',
+			'DevSecOps',
+			'DLT',
+			'Human+',
+			'Human centric',
+			'End-to-end',
+			'Innovative',
+			'IoT',
+			'ML',
+			'Neural Networks',
+			'Robotics',
+			'Smart Devices',
+			'Quantum Computing',
+			'User Journey',
+			'User Persona',
+			'VR',
+			'XR',
+      			];    
+			//shuffle through contents of each array, picking one entry per array
+      		var shuffled = buzz.sort(function(){return .5 - Math.random()});
+		var words= shuffled.slice(0,25);
+		jQuery("#1").html(words[0]);
+		jQuery("#2").html(words[1]);
+		jQuery("#3").html(words[2]);
+		jQuery("#4").html(words[3]);
+		jQuery("#5").html(words[4]);
+		jQuery("#6").html(words[5]);
+		jQuery("#7").html(words[6]);
+		jQuery("#8").html(words[7]);
+		jQuery("#9").html(words[8]);
+		jQuery("#10").html(words[9]);
+		jQuery("#11").html(words[10]);
+		jQuery("#12").html(words[11]);
+		jQuery("#13").html("FREE");
+		jQuery("#14").html(words[13]);
+		jQuery("#15").html(words[14]);
+		jQuery("#16").html(words[15]);
+		jQuery("#17").html(words[16]);
+		jQuery("#18").html(words[17]);
+		jQuery("#19").html(words[18]);
+		jQuery("#20").html(words[19]);
+		jQuery("#21").html(words[20]);
+		jQuery("#22").html(words[21]);
+		jQuery("#23").html(words[22]);
+		jQuery("#24").html(words[23]);
+		jQuery("#25").html(words[24]);
+			}
+		$(".bingo-card__item").on('click', function() {
+ 		$(this).toggleClass('active');
+		});
+
+		$('.clear-button').on('click', function(){
+		$('.bingo-card__item').removeClass('active');
+		});
+ 		</script>
+	</body>
+</html>
